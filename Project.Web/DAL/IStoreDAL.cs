@@ -8,6 +8,6 @@ namespace Project.Web.DAL
 {
     public interface IStoreDAL
     {
-        List<ItemModel> GetStoreInventory(int sort);
+        List<ItemModel> GetStoreInventory(int sort, int InventoryId);
     }
 }

@@ -20,42 +20,42 @@ namespace Project.Web.Controllers
         public ActionResult StoreGeneral()
         {
             int sort = 0;
-            List<ItemModel> model = dal.GetStoreInventory(sort);
+            List<ItemModel> model = dal.GetStoreInventory(sort, 0);
             return View("StoreGeneral", model);
         }
 
         public ActionResult Weapons()
         {
             int sort = 1;
-            List<ItemModel> model = dal.GetStoreInventory(sort);
+            List<ItemModel> model = dal.GetStoreInventory(sort, 0);
             return View("StoreGeneral", model);
         }
 
         public ActionResult Armor()
         {
             int sort = 2;
-            List<ItemModel> model = dal.GetStoreInventory(sort);
+            List<ItemModel> model = dal.GetStoreInventory(sort, 0);
             return View("StoreGeneral", model);
         }
 
         public ActionResult Ingredients()
         {
             int sort = 3;
-            List<ItemModel> model = dal.GetStoreInventory(sort);
+            List<ItemModel> model = dal.GetStoreInventory(sort, 0);
             return View("StoreGeneral", model);
         }
 
         public ActionResult MagicalItems()
         {
             int sort = 4;
-            List<ItemModel> model = dal.GetStoreInventory(sort);
+            List<ItemModel> model = dal.GetStoreInventory(sort, 0);
             return View("StoreGeneral", model);
         }
 
         public ActionResult Misc()
         {
             int sort = 5;
-            List<ItemModel> model = dal.GetStoreInventory(sort);
+            List<ItemModel> model = dal.GetStoreInventory(sort, 0);
             return View("StoreGeneral", model);
         }
     }
